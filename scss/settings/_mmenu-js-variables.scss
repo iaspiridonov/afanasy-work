@@ -1,0 +1,95 @@
+.mm-menu {
+	--mm-color-background: transparent;
+	// --mm-color-text: {$color-text};
+}
+
+.mm-navbars, .mm-navbar {
+	border: none !important;
+}
+
+.mm-navbars--bottom {
+	& > .mm-navbar {
+		& span {
+			margin-left: 45px;
+			justify-content: flex-start;
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.mm-slideout {
+	z-index: auto !important;
+}
+
+.mmenu-close {
+	position: absolute;
+	right: 26px;
+}
+
+.mm-navbar__title {
+	justify-content: flex-start;
+	margin-left: 25px;
+	padding-top: 30px;
+}
+
+#mm-clone-js-main-menu {
+	background: linear-gradient(180deg, rgba(126, 115, 151, 1), rgba(83, 67, 120, 1));
+	& .navbar__link {
+		font-size: 36px;
+		font-weight: 700;
+		font-family: serif;
+		font-family: 'Bebas Neue';
+		color: #fff;
+		margin-left: 45px;
+	}
+
+	& .navbar__list {
+		margin-top: 50px;
+	}
+
+	& .navbar__item {
+
+		&:after {
+			content: none;
+		}
+	}
+}
+
+#js-main-menu:not(.mm-menu) {
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+#js-page {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.mburger {
+	color: $color-secondary;
+	transform: translateY(10px);
+	--mb-button-size: 40px;
+	--mb-bar-height: 3px;
+	--mb-bar-spacing: 5px;
+
+	@media (min-width: $md) {
+		margin-right: 40px !important;
+	}
+
+	@media (min-width: 400px) {
+		transform: translateY(-10px);
+	}
+
+		& span {
+			display: none;
+			
+			@media (min-width: 400px) {
+				display: inline-block;
+			}
+		}
+
+	@media (min-width: $md) {
+		transform: none;
+	}
+}
