@@ -1,20 +1,20 @@
-////
-/// Common variables
-///
-/// Put all reusable variables in here. 
-/// Breakpoint variables are defined in settings/breakpoints
-////
-
-/// Color variables.
-
 $color-default: #F3F3F3;
-$color-primary: #FA7126;
-$color-secondary: #524277;
+$color-primary: #107C10;
+$color-secondary: #000;
+$color-orange: #FF9E00;
+$color-blue: #037AC4;
 
-$gradient-primary: linear-gradient(180deg, rgba(248, 162, 115, 1), rgba(250, 114, 39, 1));
-$gradient-secondary: linear-gradient(180deg, rgba(126, 115, 151, 1), rgba(83, 67, 120, 1));
+$color-gray: #F0F1F4;
+$color-gray-text: #919399;
+$color-gray-hover: #E6E8EC;
+$color-gray-active: #DBDDE4;
 
-$color-text: #333;
+$gradient-blue: linear-gradient(92.01deg, #05529C 20.05%, #037AC4 85.27%);
+$gradient-green: linear-gradient(92.01deg, #107C10 20.05%, #008575 85.27%);
+$gradient-purple: linear-gradient(92.01deg, #6A40B0 20.05%, #8661C5 85.27%);
+
+
+$color-text: #000;
 $color-text-inverted: #ffffff;
 $color-text-pall: #999999;
 
@@ -28,5 +28,6 @@ $transition-out: all 0.3s;
 
 $font-size-base: 16px;
 $line-height-base: 1.4;
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: 'Arial', sans-serif;
 $font-family-headings: 'Bebas Neue', sans-serif;
+$font-family-banners: 'Fira Sans', sans-serif;

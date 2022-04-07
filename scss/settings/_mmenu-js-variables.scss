@@ -1,6 +1,5 @@
 .mm-menu {
 	--mm-color-background: transparent;
-	// --mm-color-text: {$color-text};
 }
 
 .mm-navbars, .mm-navbar {
@@ -10,9 +9,7 @@
 .mm-navbars--bottom {
 	& > .mm-navbar {
 		& span {
-			margin-left: 45px;
-			justify-content: flex-start;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 		}
 	}
 }
@@ -27,13 +24,12 @@
 }
 
 .mm-navbar__title {
-	justify-content: flex-start;
-	margin-left: 25px;
+	justify-content: center;
 	padding-top: 30px;
 }
 
 #mm-clone-js-main-menu {
-	background: linear-gradient(180deg, rgba(126, 115, 151, 1), rgba(83, 67, 120, 1));
+	background: $gradient-green;
 	& .navbar__link {
 		font-size: 36px;
 		font-weight: 700;
@@ -41,6 +37,8 @@
 		font-family: 'Bebas Neue';
 		color: #fff;
 		margin-left: 45px;
+		text-align: center;
+		margin-left: 0;
 	}
 
 	& .navbar__list {
@@ -67,7 +65,7 @@
 }
 
 .mburger {
-	color: $color-secondary;
+	color: #fff;
 	transform: translateY(10px);
 	--mb-button-size: 40px;
 	--mb-bar-height: 3px;

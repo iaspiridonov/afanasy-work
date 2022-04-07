@@ -1,32 +1,77 @@
 .section {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    
+    @media (min-width: $md) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 
     @media (min-width: $lg) {
-        padding-bottom: 80px;
-        padding-top: 80px;
+        padding-bottom: 120px;
+        padding-top: 120px;
     }
     
-    &--project {
+    &--promo {
+        background-image: url('../img/main-bg.jpg');
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
-        background-size: auto;
-        margin-bottom: 100px;
-
-        @media (min-width: $xxl) {
+        padding-bottom: 90px;
+        min-height: 750px;
+        
+        @media (min-width: $lg) {
+            min-height: 800px;
             height: 100vh;
         }
     }
-
-    &__kviz {
-        transform: translateY(-220px);
+    
+    &--bg-vacancy {
         
-        @media (min-width: $md) {
-            transform: none;
+        @media (min-width: $lg) {
+            & .bg-word {
+                writing-mode: tb-rl;
+                transform: rotate(180deg);
+                bottom: 0;
+                left: 0;
+            }
         }
     }
-
-    &--pt-200 {
-        padding-top: 200px;
+    
+    &--bg-bonuses {
+        @media (min-width: $lg) {
+            padding-bottom: 0;
+            
+            & .bg-word {
+                bottom: 0;
+            }
+            
+            & .container {
+                padding-bottom: 180px;
+            }
+        }
     }
-
+    
+    &--bg-gray {
+        background-color: $color-gray;
+    }
+    
+    &--bg-agitation {
+        
+        @media (min-width: $lg) {
+            padding-top: 0;
+            
+            & .container {
+                padding-top: 120px;
+                background-image: url('../img/logo-transparent.svg');
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position-y: 50px;
+            }
+        }
+    }
 }

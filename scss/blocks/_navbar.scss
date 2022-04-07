@@ -13,14 +13,14 @@
 
     @media (min-width: $lg) {
         padding-top: 50px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
         align-items: center;
     }
 
-    @media (min-width: $xl) {
-        padding-bottom: 160px;
-        align-items: baseline;
-        flex-wrap: nowrap;
+    @media (min-width: $xxl) {
+        padding-top: 50px;
+        padding-bottom: 120px;
+        align-items: center;
     }
     
     @media (min-width: $lg) {
@@ -31,14 +31,6 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
-
-            @media (min-width: $xl) {
-                margin-left: 25px;
-            }
-
-            @media (min-width: $xxl) {
-                margin-left: 70px;
-            }
         }
 
         &__item {
@@ -48,12 +40,12 @@
     }
 
     &__link {
-        color: $color-secondary;
+        color: #fff;
         font-weight: 400;
-        transition: .3s;;
-
+        
         &:hover {
-            color: $color-primary;
+            color: #fff;
+            text-decoration: underline;
         }
     }
 
@@ -70,25 +62,18 @@
             transform: none;
         }
 
-        & svg {
-            fill: $color-secondary;
-            transition: .3s;
-        }
-
         & a {
-            margin-right: 8px;
+            margin-right: 5px;
             display: flex;
             align-items: center;
+            transition: .3s;
 
             @media (min-width: $md) {
-                margin-right: 15px;
+                margin-right: 10px;
             }
 
             &:hover {
-
-                & svg {
-                    fill: $color-primary;
-                }
+                opacity: .7;
             }
         }
 

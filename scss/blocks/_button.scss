@@ -1,51 +1,40 @@
 .button {
-    padding: 15px 30px;
+    padding: 16px 30px;
     border: 1px solid #FFFFFF;
+    background-color: transparent;
     border-radius: 6px;
-    font-size: 18px;
-    color: #FBFBFC;
-    font-family: $font-family-base;
+    
+    font-family: 'Arial';
+    font-style: normal;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    color: #FFFFFF;
     transition: .3s;
-    display: inline-block;
-    cursor: pointer;
-
-    &--transparent {
-        background: transparent;
-
-        &:hover {
-            background: #F8F8FB;
-        }
-    }
-
-    &--transparent-primary {
-        background: transparent;
+    
+    &:hover {
+        color: #fff;
+        background-color: $color-primary;
         border-color: $color-primary;
+    }
+    
+    &--small {
+        font-size: 16px;
+        text-transform: none;
+    }
+    
+    &--primary {
         color: $color-primary;
-
+        border-color: $color-primary;
+        
         &:hover {
-            background: $color-primary;
-            color: #FBFBFC;
-        }
-    }
-
-    &--secondary-gradient {
-        background: $gradient-secondary;
-        transition: none;
-        border: 1px solid transparent;
-
-        &:hover {
-            background: $color-secondary;
-        }
-    }
-
-    &--primary-gradient {
-        background: $gradient-primary;
-        transition: none;
-        border: 1px solid transparent;
-
-        &:hover {
-            background: $color-primary;
+            color: #fff;
+            background-color: $color-primary;
         }
     }
 }
+
+
+

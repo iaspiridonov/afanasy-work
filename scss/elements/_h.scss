@@ -1,8 +1,13 @@
 h1 {
-	font-size: 120px;
+	font-size: 48px;
 	font-weight: 700;
 	line-height: 1;
 	font-family: $font-family-headings;
+	color: $color-primary;
+	
+	@media (min-width: $sm) {
+		font-size: 64px;
+	}
 }
 
 h2 {

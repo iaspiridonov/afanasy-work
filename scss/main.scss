@@ -37,6 +37,7 @@
 @import "elements/a";
 @import "elements/h";
 @import "elements/title";
+@import "elements/bg-word";
 
 
 // 5. Objects – class-based selectors which define undecorated design patterns, 
@@ -46,30 +47,15 @@
 // This is where the majority of our work takes place 
 // and our UI components are often composed of Objects and Components.
 @import "blocks/navbar";
-@import "blocks/swiper-promo";
-@import "blocks/swiper-offer";
-@import "blocks/swiper-projects";
 @import "blocks/button";
 @import "blocks/section";
-@import "blocks/tabs";
-@import "blocks/accordion";
-@import "blocks/advantage";
-@import "blocks/price";
-@import "blocks/kviz";
-@import "blocks/jobs";
-@import "blocks/tariff";
-@import "blocks/price-list";
-@import "blocks/offer";
-@import "blocks/about";
+@import "blocks/promo";
+@import "blocks/find";
+@import "blocks/card";
+@import "blocks/bonus";
+@import "blocks/swiper-agitation";
+@import "blocks/swiper-gallery";
 @import "blocks/footer";
-@import "blocks/modal-kviz";
-@import "blocks/ui-slider";
-@import "blocks/map";
-@import "blocks/header";
-@import "blocks/city-swap";
-@import "blocks/project";
-@import "blocks/project-form";
-@import "blocks/content-page";
 
 // 7. Utilities – utilities and helper classes with ability to override anything 
 // which goes before in the triangle, eg. hide helper class.
@@ -79,12 +65,7 @@
 @import "utilities/u-headings";
 @import "utilities/u-line-height";
 @import "utilities/u-font-weight";
-@import "utilities/u-border-bottom";
-@import "utilities/u-border-left";
 @import "utilities/u-outline-none";
 @import "utilities/u-z-index";
 @import "utilities/u-object-fit";
-@import "utilities/u-bottom-underline";
-@import "utilities/u-top";
-@import "utilities/u-text-decoration";
 @import "utilities/u-margin";
