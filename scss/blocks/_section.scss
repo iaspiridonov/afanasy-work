@@ -12,6 +12,13 @@
         padding-top: 120px;
     }
     
+    &--secondary {
+        @media (min-width: $lg) {
+            min-height: 800px;
+            height: 100vh;
+        }
+    }
+    
     &--promo {
         background-image: url('../img/main-bg.jpg');
         padding-top: 0;
@@ -27,6 +34,38 @@
         @media (min-width: $lg) {
             min-height: 800px;
             height: 100vh;
+        }
+    }
+    
+    &--bg-contacts {
+        
+        @media (min-width: $lg) {
+            
+            & .container {
+                padding-bottom: 200px;
+            }
+            
+            & .bg-word {
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    
+    &--bg-history {
+        
+        @media (min-width: $lg) {
+            
+            & .container {
+                padding-bottom: 200px;
+            }
+            
+            & .bg-word {
+                bottom: 0;
+                left: 0;
+                writing-mode: tb-rl;
+                transform: rotate(180deg);
+            }
         }
     }
     

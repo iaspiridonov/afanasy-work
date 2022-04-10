@@ -58,4 +58,11 @@ $(document).ready(function () {
 			}
 		}
 	});
+	
+	// Accordion
+	$('.accordion__title').click(function (e) { 
+		e.preventDefault();
+		let accordion = $(this).parent('.accordion');
+		accordion.toggleClass('accordion--active');
+	});
 });

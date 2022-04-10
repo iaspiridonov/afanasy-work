@@ -38,6 +38,9 @@
 @import "elements/h";
 @import "elements/title";
 @import "elements/bg-word";
+@import "elements/text-secondary";
+@import "elements/text-primary";
+@import "elements/big-link";
 
 
 // 5. Objects – class-based selectors which define undecorated design patterns, 
@@ -56,6 +59,12 @@
 @import "blocks/swiper-agitation";
 @import "blocks/swiper-gallery";
 @import "blocks/footer";
+@import "blocks/offers-list";
+@import "blocks/custom-checkbox";
+@import "blocks/accordion";
+@import "blocks/comment";
+@import "blocks/offer-form";
+
 
 // 7. Utilities – utilities and helper classes with ability to override anything 
 // which goes before in the triangle, eg. hide helper class.
